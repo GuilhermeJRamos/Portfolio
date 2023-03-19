@@ -11,9 +11,9 @@
 }
 :root {
   --bg-color: #1f242d;
-  --second-bg-color: #323946;
+  --second-bg-color: #4b13a5;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color: rgb(219, 14, 127);
 }
 span {
   color: var(--main-color);
@@ -46,14 +46,14 @@ body {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
-  cursor: default;
+  cursor: pointer;
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
 .navbar a {
   display: inline-block;
   font-size: 1.7rem;
-  color: #fff;
+  color: var(--text-color);
   flex-wrap: wrap;
   text-decoration: none;
   font-weight: 500;
@@ -95,7 +95,7 @@ body {
   animation-delay: 0.7s;
 }
 .home-content h3 span {
-  color: #0ef;
+  color: var(--main-color);
 }
 .home-content h1 {
   font-size: 5.6rem;
@@ -130,9 +130,9 @@ body {
   animation-delay: 1.5s;
 }
 .social-media a:hover {
-  background: #0ef;
-  color: #1f242d;
-  box-shadow: 0 0 20px #0ef;
+  background: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 20px var(--main-color);
 }
 .btn {
   display: inline-block;
@@ -141,7 +141,7 @@ body {
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   font-size: 1.6rem;
-  color: var(--second-bg-color);
+  color: var(--text-color);
   letter-spacing: 0.1rem;
   text-decoration: none;
   font-weight: 600;
@@ -164,7 +164,7 @@ body {
   background-color: var(--second-bg-color);
 }
 .about span {
-  color: #0ef;
+  color: var(--main-color);
 }
 .about-img img {
   width: 35vw;
@@ -184,6 +184,7 @@ body {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
+
 .services h2 {
   margin-bottom: 5rem;
 }
@@ -420,6 +421,9 @@ body {
   .footer {
     padding: 2rem 3%;
   }
+  .porfolio-box img {
+    width: 100%;
+  }
 }
 @media (max-width: 1200px) {
   html {
@@ -438,6 +442,9 @@ body {
   }
   .portfolio {
     padding-bottom: 7rem;
+  }
+  .porfolio-box img {
+    max-width: 100%;
   }
   .footer {
     padding: 2rem 3%;
@@ -585,5 +592,11 @@ body {
 
   .about-content p {
     font-size: 1.4rem;
+  }
+  .services {
+    height: 100vh;
+  }
+  .home {
+    height: 100vh;
   }
 }

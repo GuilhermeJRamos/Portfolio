@@ -7,7 +7,11 @@ menuIcon.onclick = () => {
 };
 
 var typed = new Typed(".multiple-text", {
-  strings: [" Frontend Developer", " Backend Developer"],
+  strings: [
+    " Frontend Developer +",
+    " Backend Developer",
+    " = Full Stack Developer",
+  ],
   typeSpeed: 100,
   backSpeed: 100,
   backdelay: 1000,
@@ -36,7 +40,7 @@ window.onscroll = () => {
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 100);
 
-  meunuIcon.classList.remove("bx-x");
+  menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
 
